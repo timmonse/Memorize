@@ -19,7 +19,7 @@ class EmojiMemoryGame: ObservableObject {
     
     static var gameTheme = themes.randomElement()!
     
-    static func createMemoryGame() -> MemoryGame<String> {
+    private static func createMemoryGame() -> MemoryGame<String> {
         gameTheme = themes.randomElement()!
         var emojis = gameTheme.emojis
         emojis.shuffle()
