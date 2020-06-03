@@ -69,10 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				859EB632247C6059005B8010 /* MemoryGame.swift */,
-				856134C62486A62B003E081A /* Array+Only.swift */,
-				856134C424856F4F003E081A /* Array+Identifiable.swift */,
 				859EB634247C6520005B8010 /* EmojiMemoryGame.swift */,
 				8560510924785FEB000CDB2E /* EmojiMemoryGameView.swift */,
+				856134C62486A62B003E081A /* Array+Only.swift */,
+				856134C424856F4F003E081A /* Array+Identifiable.swift */,
 				856134C224856918003E081A /* GridLayout.swift */,
 				856134C0248561C1003E081A /* Grid.swift */,
 				8560510524785FEB000CDB2E /* AppDelegate.swift */,
