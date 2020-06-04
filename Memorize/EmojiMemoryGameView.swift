@@ -54,7 +54,7 @@ struct CardView: View {
                 Text(card.content)
                     .font(Font.system(size: fontSize(for: size)))
             }
-            .cardify(isFaceUp: card.isFaceUp)
+            .cardify(isFaceUp: card.isFaceUp, themeColor: EmojiMemoryGame.gameTheme.themeColor)
         }
     }
     
