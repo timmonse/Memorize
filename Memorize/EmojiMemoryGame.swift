@@ -11,9 +11,9 @@ import SwiftUI
 class EmojiMemoryGame: ObservableObject {
     @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
     
-    private static var themes = [Theme("Halloween", with: ["👻", "🎃", "🕷", "🕸", "🍬"], count: 5, color: Color.orange),
+    private static var themes = [Theme("Halloween", with: ["👻", "🎃", "🕷", "🕸", "🍬"], color: Color.orange),
                   Theme("Christmas", with: ["🎄", "🎅", "🤶", "🎁", "🍪"], color: Color.green),
-                  Theme("Animals", with: ["🦙", "🐘", "🦜", "🐅", "🐕"], count: 3, color: Color.red),
+                  Theme("Animals", with: ["🦙", "🐘", "🦜", "🐅", "🐕"], count: 4, color: Color.red),
                   Theme("Sports", with: ["🏀", "🏈", "🎾", "⚾️", "⚽️"], color: Color.blue),
                   Theme("Faces", with: ["😀", "😍", "🤪", "🥺", "🙄"], color: Color.purple)]
     
@@ -68,7 +68,7 @@ class EmojiMemoryGame: ObservableObject {
         init(_ themeName: String, with emojis: [String], color themeColor: Color){
             self.themeName = themeName
             self.emojis = emojis
-            self.numberOfCardsToShow = Int.random(in: 2...5)
+            self.numberOfCardsToShow = Int.random(in: 2 ... 4)
             self.themeColor = themeColor
         }
         
